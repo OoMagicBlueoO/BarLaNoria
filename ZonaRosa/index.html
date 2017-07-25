@@ -67,6 +67,7 @@
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="stylesheet" href="../assets/css/zonarosa.css">
     <link rel="stylesheet" href="../assets/css/icons/foundation-icons.css">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script> -->
   </head>
   <body>
@@ -135,7 +136,7 @@
       </div>
     </section>
     <section data-sticky-container id="bot-menu-container">
-      <div class="data-sticky callout logo-nav align-center" data-sticky data-options="marginTop:-8" data-sticky-on="large" data-top-anchor="bot-menu-container">
+      <div class="data-sticky callout logo-nav align-center" data-sticky data-options="marginTop:-8.8" data-sticky-on="small" data-top-anchor="bot-menu-container">
       <a href="../"><img src="../assets/img/Sucursales/bar-la-noria-zona-rosa-logo.png" alt="Bar La Noria Zona Rosa"></a>
         <ul class="menu show-for-large">
           <li><a href="/Noticias"><i class="fi-sheriff-badge">&nbsp;</i>Inicio</a></li>
@@ -250,7 +251,7 @@
     
     
     <section data-sticky-container id="bandas-container">
-      <div class="bandas data-sticky" data-sticky data-sticky-on="large" data-top-anchor="bandas-container" data-options="marginTop:-14">
+      <div class="bandas data-sticky" data-sticky data-sticky-on="large" data-top-anchor="bandas-container" data-options="marginTop:-15.5">
         <div class="row">
           <div class="column small-12 large-5">
             <h2>Próximos Eventos</h2>
@@ -262,7 +263,7 @@
                     <div class="media-object-section">
                       <h4>Banda por confirmar...</h4>
                       <p></p>
-                      <img src="../assets/img/Bandas/Banda-off.jpg" alt="Banda Cabra" class="thumbnail">
+                      <img src="../assets/img/Bandas/Banda-1.jpg" alt="Banda Cabra" class="thumbnail">
                     </div>
                   </div>
                 </div>
@@ -342,6 +343,18 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="restaurant-vr">
+      <a-scene embedded>
+        <a-entity>
+          <a-camera></a-camera>
+          <a-animation attribute="position" from="-2 2 2" to="0 0 0" dur="2000"></a-animation>
+        </a-entity>
+          <a-sky src="../assets/img/aframe/restaurant.jpg" rotation="0 -200 0" position="0 0 -5"></a-sky>
+          <a-text font="monoid" value="Horario:" width="10" position="-5.5 4 -5"  rotation="0 15 0" align="center" ></a-text>
+          <a-text font="monoid" value="12:00 Hrs. a 17:00 Hrs." width="10" position="-2 3 -5"  rotation="0 15 0" align="center" ></a-text>
+      </a-scene>
+    
     </section>
     <footer>
       <div >
